@@ -289,7 +289,7 @@ switch (a) {
         console.log("2です。");
         break;
     case 3:
-        console.log("さぁーん（アホ）！");
+        console.log("さぁーん！");
         break;
     default:
         console.log("それ以外です。");
