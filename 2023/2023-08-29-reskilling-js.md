@@ -326,3 +326,151 @@ for (var i = 0; i < 10; i++) {
     console.log(i);
 }
 ~~~
+
+---
+## break 文
+
+for文, while文 などのループ内で使用。
+
+break が実行されるとループを脱出
+
+~~~
+for (var i = 0; i < 100; i++) {
+    console.log(i);
+    if (i > 5) {
+        break;
+    }
+}
+~~~
+
+---
+## continue 文
+
+for文, while文 などのループ内で使用。
+
+continue が実行されると、すぐさま次のループを実行
+
+~~~
+for (var i = 0; i < 100; i++) {
+    if (i <= 95) {
+        continue;
+    }
+    console.log(i);
+}
+~~~
+
+---
+## 配列と繰り返し
+
+~~~
+var list = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37];
+for (var i = 0; i < list.length; i++) {
+    console.log(i + "番目の素数は" + list[i] + "です。");
+    var str = String(list[i]); // 数値型を文字列型に変換
+    if (str.indexOf("3") != -1) { // "3" が str に存在しなければ -1 を返す
+        console.log(str + "は 3 を含みます。");
+    }
+}
+~~~
+
+---
+## 動かしてみよう
+
+３の倍数、もしくは "3" を含む数字のときだけ派手に表示
+
+~~~index0100.html
+<html>
+<head>
+    <script type="text/javascript" src="index0100.js"></script>
+</head>
+<body>
+    <p id="number">0</p>
+</body>
+</html>
+~~~
+
+~~~
+const countmax = 100;
+var count = 1;
+var timer = setInterval(function() {
+    var msg = String(count);
+    if (count % 3 === 0 ||
+        String(count).indexOf("3") != -1) {
+        msg = "<font color='red' size=30>" + count + "</font>";
+    }
+    document.getElementById("number").innerHTML = msg;
+    if (count >= countmax) {
+        clearInterval(timer);
+    }
+    count++;
+}, 1000);
+~~~
+
+---
+## 休憩
+
+# ストレッチとかして、すこし体を動かしましょう。
+
+---
+## 関数
+
+- 同じ処理を何度も書きたくない場合に利用
+- 可読性（読みやすさ）のために利用
+
+~~~
+function 関数名(引数リスト) {
+    // ここに実行したい文を書く
+    return 値;
+}
+~~~
+
+---
+## 変数型
+
+- JavaScript の処理系がほぼ自動で処理してくれる
+- 変数には「型情報」と「値」が格納されている
+
+~~~
+var a;
+a = 1;
+console.log(a);
+a = "こんばんは。";
+console.log(a);
+a = true;
+console.log(a);
+~~~
+
+---
+## for in 文
+
+繰り返し for 文の派生系
+
+~~~
+var obj = {a:1, b:2, c:3};
+for (var k in obj) {
+    console.log(k);
+    console.log(obj[k]);
+}
+~~~
+
+---
+## エラーハンドリング
+
+~~~
+try {
+    var a = 5 / 0; // 0 で割っているのでエラーが起こる
+    a *= 5;
+    console.log(a);
+} catch (err) {
+    console.log("エラーが起きました。");
+}
+~~~
+
+---
+## やってみよう
+
+以下の数値配列の平均を算出するプログラムを書いてください。
+
+~~~
+var nums = [56, 78, 82, 64, 100, 87, 98, 43, 95, 83, 60, 74, 36];
+~~~
