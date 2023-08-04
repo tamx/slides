@@ -229,3 +229,100 @@ console.log(result2);
 var result3 = !((x == 1) && (y == 2));
 console.log(result3);
 ~~~
+
+---
+## 配列変数
+
+- 変数が列になったもの
+- 複数の値を一括で扱える
+- 「変数名[添字]」で指定
+- 添字は定数でも変数でも良い
+
+~~~
+var students = ["tanaka", "sato", "suzuki"];
+console.log(students[0]);
+var index = 2;
+console.log(students[index]);
+~~~
+
+---
+## 条件分岐１
+
+~~~
+if (式) {
+    // 式が true ならここ
+}
+~~~
+
+~~~
+if (式) {
+    // 式が true ならここ
+} else {
+    // 式が false ならここ
+}
+~~~
+
+---
+## 条件分岐２
+
+~~~
+if (式１) {
+    // 式１が true ならここ
+} else if (式２) {
+    // 式１が false かつ式２が true ならここ
+} else if (式３) {
+    // 式１, 式２が false かつ式３が true ならここ
+} else {
+    // 式１, 式２, 式３が false ならここ
+}
+~~~
+
+---
+## switch 文
+
+~~~
+switch (a) {
+    case 1:
+        console.log("1です。");
+        break;
+    case 2:
+        console.log("2です。");
+        break;
+    case 3:
+        console.log("さぁーん（アホ）！");
+        break;
+    default:
+        console.log("それ以外です。");
+        break;
+}
+~~~
+
+---
+## while 文
+
+~~~
+while (式) {
+    // 式が true の間、ここを実行
+}
+~~~
+
+~~~
+do {
+    // 文
+} while (式); // 式が true なら、もう一度文を実行
+~~~
+
+---
+## for 文
+
+~~~
+for (初期化式１; 条件式; 繰返式) {
+    // ここを実行
+}
+~~~
+
+~~~
+for (var i = 0; i < 10; i++) {
+    console.log(i);
+}
+~~~
