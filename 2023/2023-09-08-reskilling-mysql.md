@@ -160,7 +160,7 @@ CREATE TABLE student(
 INSERT INTO student (id, name, grade) VALUES (1001, 'Tam', 1);
 INSERT INTO student (id, name, grade) VALUES (2001, '馬場', 2);
 INSERT INTO student (id, name, grade) VALUES (3001, '水尾', 3);
-INSERT INTO student (id, name, grade) VALUES (3002, 'ほげほげ', 3);
+INSERT INTO student (id, name, grade) VALUES (3002, '多田', 3);
 ~~~
 
 コピペを活用して効率よく入力してください。
@@ -199,3 +199,4 @@ DROP TABLE テーブル名;
 
 ---
 
+# JS から MySQL への I/O
