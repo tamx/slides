@@ -105,6 +105,38 @@ document.writeln(h + "時" + m + "分" + s + "秒");
 ~~~
 
 ---
+## 関数に分離してみましょう。
+
+~~~sample0050.js
+// 関数を定義
+function display() {
+    var d = new Date();
+    var h = d.getHours();
+    var m = d.getMinutes();
+    var s = d.getSeconds();
+    document.writeln(h + "時" + m + "分" + s + "秒");
+}
+
+display(); // 関数を実行
+~~~
+
+---
+## 時計を更新してみましょう。
+
+~~~sample0060.js
+// 関数を定義
+function display() {
+    var d = new Date();
+    var h = d.getHours();
+    var m = d.getMinutes();
+    var s = d.getSeconds();
+    document.writeln(h + "時" + m + "分" + s + "秒");
+}
+
+setInterval(display, 1000); // 1000ミリ秒毎に関数を実行
+~~~
+
+---
 ## 変数
 
 - 値（数値や文字列等）を入れる入れ物
@@ -113,7 +145,10 @@ document.writeln(h + "時" + m + "分" + s + "秒");
 ~~~
 var name = "Tam";   // 名前は Tam
 var age = 17;       // 年齢は 17歳
+let address = "高松市"; // 住所は高松
 ~~~
+
+※var と let どちらでも変数を定義できますが、できる限り let を使いましょう。
 
 ---
 ## 定数
@@ -127,6 +162,58 @@ const sales_tax_rate = 0.10;    // 消費税率は 10%
 ~~~
 
 定数をうまく利用すると、成人年齢が引き下げられたときや、消費税率が変更されたときなどに、必要最低限の変更で対応することが出来るようになる。
+
+---
+## スコープ１
+
+以下を実行すると、何が表示されるでしょうか？
+
+~~~
+let a = 1;
+
+function test() {
+    let a = 2;
+}
+
+test();
+console.log(a);
+~~~
+
+---
+## スコープ２
+
+以下を実行すると、何が表示されるでしょうか？
+
+~~~
+function test() {
+    let a = 1;
+    {
+        console.log(a);
+        let a = 2;
+        console.log(a);
+    }
+    console.log(a);
+}
+
+test();
+~~~
+
+---
+## スコープ３
+
+以下を実行すると、何が表示されるでしょうか？
+
+~~~
+function test() {
+    var a = 1;
+    {
+        var a = 2;
+    }
+    console.log(a);
+}
+
+test();
+~~~
 
 ---
 ## 算術演算子
@@ -374,6 +461,20 @@ for (var i = 0; i < list.length; i++) {
 ~~~
 
 ---
+## 作ってみよう
+
+### お題
+
+1. １秒に１つずつ、 1 から数字をインクリメントしながら表示する。
+1. ３の倍数のときにだけ「！」を付けて表示する。
+1. ３の倍数のとき、もしくは "3" を含む数字のときだけ「！」を付けて表示する。
+
+---
+## 休憩
+
+# ストレッチして、すこし体を動かしましょう。
+
+---
 ## 動かしてみよう
 
 ３の倍数、もしくは "3" を含む数字のときだけ派手に表示
@@ -406,11 +507,6 @@ var timer = setInterval(function() {
     count++;
 }, 1000);
 ~~~
-
----
-## 休憩
-
-# ストレッチして、すこし体を動かしましょう。
 
 ---
 ## 関数
