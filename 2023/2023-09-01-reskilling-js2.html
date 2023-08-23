@@ -120,6 +120,23 @@ fetch(url)
 <footer>リスキリング JS-2</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-footer="リスキリング JS-2" data-marpit-pagination="10" data-marpit-pagination-total="11" style="--paginate:true;--footer:リスキリング JS-2;">
+<h2>ファイルの読み込み</h2>
+<p>今書き込んだ JSON フィアルを読み出してみましょう。<br />
+ファイルの読み書きには通常 File API を使用します。</p>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>&lt;input id=&quot;myfile&quot; type=&quot;file&quot;&gt;
+</span></span></foreignObject></svg></code></pre>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>const f = document.getElementById('myfile');
+f.addEventListener('change', evt =&gt; {
+    const input = evt.target;
+    const file = input.files[0];
+    const reader = new FileReader();
+    reader.onload = () =&gt; {
+        // 読み出し結果の表示
+        console.log(reader.result);
+    };
+    reader.readAsText(file); // 読み込み開始
+});
+</span></span></foreignObject></svg></code></pre>
 <footer>リスキリング JS-2</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-footer="リスキリング JS-2" data-marpit-pagination="11" data-marpit-pagination-total="11" style="--paginate:true;--footer:リスキリング JS-2;">

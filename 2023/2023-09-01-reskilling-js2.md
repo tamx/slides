@@ -132,7 +132,28 @@ document.getElementById('weather').addEventListener('click', (event) => {
 ~~~
 
 ---
+## ファイルの読み込み
 
+今書き込んだ JSON フィアルを読み出してみましょう。
+ファイルの読み書きには通常 File API を使用します。
+
+~~~
+<input id="myfile" type="file">
+~~~
+
+~~~
+const f = document.getElementById('myfile');
+f.addEventListener('change', evt => {
+    const input = evt.target;
+    const file = input.files[0];
+    const reader = new FileReader();
+    reader.onload = () => {
+        // 読み出し結果の表示
+        console.log(reader.result);
+    };
+    reader.readAsText(file); // 読み込み開始
+});
+~~~
 
 ---
 # テキストファイル（CSV）のI/O
