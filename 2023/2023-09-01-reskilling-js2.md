@@ -206,3 +206,73 @@ console.log(cvsArray);
 - 超幾何関数入門 木村 弘信
 
 ---
+## オブジェクト
+
+オブジェクトとは、
+（乱暴に言うと）「データ型」とその「計算方法」の塊です。
+
+データを表す構造とその計算ロジックを「クラス」という塊で表します。
+
+例：分数を表すクラス
+~~~
+class Rational {
+    var bunshi;
+    var bunbo;
+}
+~~~
+
+---
+## メソッド
+
+オブジェクトの中で定義されている関数は「メソッド」と呼びます。
+
+~~~
+class Rational {
+    time(rhs) {
+        this.bunshi *= rhs.bunshi;
+        this.bunbo *= rhs.bunbo;
+    }
+}
+~~~
+
+---
+## インスタンス
+オブジェクトのデータが入っている本体を「インスタンス」と呼びます。
+
+インスタンスの作成は「コンストラクタ」という特別なメソッドで行います。
+
+コンストラクタを用いて、インスタンスを作成するためにいは、「new 演算子」を使います。
+
+~~~
+class Rational {
+    constructro(bunshi, bunbo) {
+        this.bunshi = bunshi;
+        this.bunbo = bunbo;
+    }
+}
+
+var bunsu = new Rational(1, 3);
+~~~
+
+---
+## 静的メソッド
+
+インスタンスと関係のないクラス内のメソッドを「静的メソッド」と呼びます。
+
+~~~
+class Rational {
+    static time(lhs, rhs) {
+        let bunshi = lhs.bunshi * rhs.bunshi;
+        let bonbo = lhs.bunbo * rhs.bunbo;
+        let instance = new Rational(bunshi, bunbo);
+        return instance;
+    }
+}
+
+var bunsu = new Rational(1, 3).time(new Rational(3, 2));
+~~~
+
+---
+## 演習
+
+- 上の分数クラスを利用して、分数同士の割り算メソッドを作成してください。
