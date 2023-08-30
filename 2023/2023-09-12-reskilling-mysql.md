@@ -4,7 +4,7 @@ paginate: true
 ---
 # リスキリング
 
-第４回 RDB MySQL / 全７回
+第５回 RDB MySQL / 全７回
 
 <!-- 
 $theme: gaia
