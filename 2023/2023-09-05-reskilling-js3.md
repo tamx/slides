@@ -48,3 +48,53 @@ console.log(element.value);
 ~~~
 
 ---
+## 演習
+
+香川県の郵便番号の CSV が以下の URL から取得できます。
+
+http://etp.xsrv.jp/reskilling/
+
+~~~
+const url = "http://etp.xsrv.jp/reskilling/2/37KAGAWA_ZIP_UTF-8.csv";
+
+fetch(url)
+  .then((response) => {
+    return response.text();
+  })
+  .then((data) => {
+    console.log(data);
+    // CSV を読み込み
+    let csvArray = [];
+    let lines = data.split(/\r\n|\n/);
+    for (let i = 0; i < lines.length; ++i) {
+      let line = lines[i].replace(/"/g, "");
+      let cells = line.split(",");
+      csvArray.push(cells);
+    }
+    console.log(csvArray);
+  });
+~~~
+
+---
+## 演習
+
+~~~
+function search(zip) {
+  for (let index in csvArray) {
+    let data = csvArray[index];
+    if (data[2] === zip) {
+      let address = data[7] + data[8];
+      return address;
+    }
+  }
+  return "";
+}
+
+let address = search("7600019");
+console.log(address);
+~~~
+
+---
+## 休憩
+
+体を動かして、ストレッチしましょう。
