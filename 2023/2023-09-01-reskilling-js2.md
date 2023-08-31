@@ -190,7 +190,7 @@ for (let i = 0; i < lines.length; ++i) {
     csvArray.push(cells);
 }
 
-console.log(cvsArray);
+console.log(csvArray);
 ~~~
 
 ---
