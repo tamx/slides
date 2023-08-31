@@ -20,6 +20,8 @@ template: invert
 - ブラウザがなくても、 JavaScript コードを実行できる。
 - Web サーバーなどを JavaScript で作成できる。
 
+注：ブラウザ上で動かしているわけではないので、 window.～ とか document.～ とかは使えません。
+
 ---
 ## 動かしてみよう。
 
