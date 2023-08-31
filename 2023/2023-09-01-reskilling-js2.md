@@ -245,7 +245,7 @@ class Rational {
 
 ~~~
 class Rational {
-    constructro(bunshi, bunbo) {
+    constructor(bunshi, bunbo) {
         this.bunshi = bunshi;
         this.bunbo = bunbo;
     }
