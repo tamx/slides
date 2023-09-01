@@ -271,7 +271,8 @@ class Rational {
     }
 }
 
-var bunsu = new Rational(1, 3).time(new Rational(3, 2));
+var bunsu1 = new Rational(1, 3).time(new Rational(3, 2));
+var bunsu2 = Rational.time(new Rational(1, 3), new Rational(3, 2));
 ~~~
 
 ---
