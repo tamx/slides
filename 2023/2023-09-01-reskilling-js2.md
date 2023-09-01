@@ -32,7 +32,7 @@ template: invert
     <body>
         <div id="myid">Hello!</div>
     </body>
-    <script type="text/javascript>
+    <script type="text/javascript">
         var element = document.getElementById("myid");
         console.log(element.innerText);
         element.innerHTML = '<span style="color:#ff0000;">Good Evening!</span>';
@@ -48,7 +48,7 @@ template: invert
     <body>
         <div id="myid">Hello!</div>
     </body>
-    <script type="text/javascript>
+    <script type="text/javascript">
         console.log(location.href);
     </script>
 </html>
@@ -199,6 +199,8 @@ console.log(csvArray);
 1. ネットワークから CSV ファイルを取得しましょう。
 1. 取得した CSV ファイルの情報をもとに、 HTML を生成して、画面に表示してみましょう。
 1. 生成する HTML は `<ul><li>１つ目</li><li>２つ目</li></ul>` となるようにしましょう。
+
+http://etp.xsrv.jp/reskilling/
 
 例：
 - 博士の愛した数式 小川 洋子
