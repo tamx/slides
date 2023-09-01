@@ -81,7 +81,7 @@ function buttonClick(){
 }
 
 let button = document.getElementById('myid2');
-button.addEventListener('click', butotnClick);
+button.addEventListener('click', buttonClick);
 ~~~
 
 ---
