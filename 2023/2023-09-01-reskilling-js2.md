@@ -276,6 +276,27 @@ var bunsu2 = Rational.time(new Rational(1, 3), new Rational(3, 2));
 ~~~
 
 ---
+## インスタンス同士の比較
+
+~~~
+class Rational {
+    equals(rhs) {
+        if (this.bunshi !== rhs.bunshi) {
+            return false;
+        }
+        if (this.bunbo !== rhs.bunbo) {
+            return false;
+        }
+        return true;
+    }
+}
+
+var bunsu1 = new Rational(1, 3).time(new Rational(3, 2));
+var bunsu2 = Rational.time(new Rational(1, 3), new Rational(3, 2));
+console.log(bunsu1.equals(bunsu2));
+~~~
+
+---
 ## 演習
 
 - 上の分数クラスを利用して、分数同士の割り算メソッドを作成してください。
