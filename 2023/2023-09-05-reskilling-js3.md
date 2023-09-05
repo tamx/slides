@@ -43,6 +43,100 @@ template: invert
 1. プロジェクトの複製先となるローカル ディレクトリを選択 (または作成) する。
 
 ---
+## オブジェクト
+
+オブジェクトとは、
+（乱暴に言うと）「データ型」とその「計算方法」の塊です。
+
+データを表す構造とその計算ロジックを「クラス」という塊で表します。
+
+例：分数を表すクラス
+~~~
+class Rational {
+    var bunshi;
+    var bunbo;
+}
+~~~
+
+---
+## メソッド
+
+オブジェクトの中で定義されている関数は「メソッド」と呼びます。
+
+~~~
+class Rational {
+    time(rhs) {
+        this.bunshi *= rhs.bunshi;
+        this.bunbo *= rhs.bunbo;
+    }
+}
+~~~
+
+---
+## インスタンス
+オブジェクトのデータが入っている本体を「インスタンス」と呼びます。
+
+インスタンスの作成は「コンストラクタ」という特別なメソッドで行います。
+
+コンストラクタを用いて、インスタンスを作成するためにいは、「new 演算子」を使います。
+
+~~~
+class Rational {
+    constructor(bunshi, bunbo) {
+        this.bunshi = bunshi;
+        this.bunbo = bunbo;
+    }
+}
+
+var bunsu = new Rational(1, 3);
+~~~
+
+---
+## 静的メソッド
+
+インスタンスと関係のないクラス内のメソッドを「静的メソッド」と呼びます。
+
+~~~
+class Rational {
+    static time(lhs, rhs) {
+        let bunshi = lhs.bunshi * rhs.bunshi;
+        let bonbo = lhs.bunbo * rhs.bunbo;
+        let instance = new Rational(bunshi, bunbo);
+        return instance;
+    }
+}
+
+var bunsu1 = new Rational(1, 3).time(new Rational(3, 2));
+var bunsu2 = Rational.time(new Rational(1, 3), new Rational(3, 2));
+~~~
+
+---
+## インスタンス同士の比較
+
+~~~
+class Rational {
+    equals(rhs) {
+        if (this.bunshi !== rhs.bunshi) {
+            return false;
+        }
+        if (this.bunbo !== rhs.bunbo) {
+            return false;
+        }
+        return true;
+    }
+}
+
+var bunsu1 = new Rational(1, 3).time(new Rational(3, 2));
+var bunsu2 = Rational.time(new Rational(1, 3), new Rational(3, 2));
+console.log(bunsu1.equals(bunsu2));
+~~~
+
+---
+## 演習
+
+- 上の分数クラスを利用して、分数同士の割り算メソッドを作成してください。
+
+---
 ## 郵便番号から住所変換
 
 今まで学んだことを活かして、入力した郵便番号から住所を保管する Web ページを作成しましょう。
