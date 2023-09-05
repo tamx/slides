@@ -43,6 +43,15 @@ template: invert
 1. プロジェクトの複製先となるローカル ディレクトリを選択 (または作成) する。
 
 ---
+## 試してみよう！
+
+前回の宿題の模範解答を、以下の GitHub に置いてあります。
+
+https://github.com/tamx/reskilling-sample.git
+
+試しに clone して実行してみましょう。
+
+---
 ## オブジェクト
 
 オブジェクトとは、
