@@ -14,6 +14,44 @@ template: invert
 <!-- footer: リスキリング Node.js -->
 
 ---
+## git
+
+- バージョン管理システム
+- 「分散型」
+
+## GitHub
+
+- git を「集中管理」するための Web サービス
+
+---
+## GitHub を使ってみよう！
+
+1. GitHub にアカウントを作成する。
+1. 新しいリポジトリを作成する。
+1. VSCode で clone する。
+1. 何かファイルを作って、 commit する。
+1. push する。
+1. GitHub 上にファイルが来ていることを確認する。
+
+---
+## VSCode で clone
+
+1. 「Ctrl + Shift + P」でコマンドパレットを開く。
+1. 「gitcl」と入力し、「Git: Clone」コマンドを選択。「Clone From GitHub」を選択する。
+1. GitHub にサインインするように求められたら、サインインプロセスを実行する。
+1. リポジトリの URL を入力する。
+1. プロジェクトの複製先となるローカル ディレクトリを選択 (または作成) する。
+
+---
+## 試してみよう！
+
+前回の宿題の模範解答を、以下の GitHub に置いてあります。
+
+https://github.com/tamx/reskilling-sample.git
+
+試しに clone して実行してみましょう。
+
+---
 ## Node.js とは？
 
 - JavaScript の実行環境
@@ -78,10 +116,11 @@ app.get("/", (req, res) => {
 ~~~
 
 ---
-## ファイルの配信
+## HTML ファイルの配信
 
 Node.js の中に HTML を埋め込んでいくのは大変なので、別に用意した HTML ファイルを配信してみましょう。
 
+index.html
 ~~~
 <html>
   <body>
@@ -93,6 +132,48 @@ Node.js の中に HTML を埋め込んでいくのは大変なので、別に用
 ~~~
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
+});
+~~~
+
+---
+## JSファイルの配信
+
+別に用意した JS ファイルも配信してみましょう。
+
+index.html
+~~~
+<script type="text/javascript" src="sample.js"></script>
+~~~
+
+sample.js
+~~~
+alert("Hello World!");
+~~~
+
+~~~
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/index.html");
+});
+app.get("/sample.js", (req, res) => {
+  res.sendFile(__dirname + "/sample.js");
+});
+~~~
+
+---
+## 変数渡し
+
+index.html
+~~~
+<html>
+  <body>
+    <p><%= name %>さん、こんにちは。</p>
+  </body>
+</html>
+~~~
+
+~~~
+app.get('/', function(req, res) {
+  res.render(__dirname + "/views/layouts/main.html", {name: "Tam"});
 });
 ~~~
 
