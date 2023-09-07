@@ -178,7 +178,7 @@ app.get("/sample.js", (req, res) => {
 ---
 ## 変数渡し
 
-index.html
+views/index.html
 ~~~
 <html>
   <body>
@@ -186,10 +186,15 @@ index.html
   </body>
 </html>
 ~~~
-
 ~~~
-app.get('/', function(req, res) {
-  res.render(__dirname + "/index.html", {name: "Tam"});
+npm install ejs
+~~~
+~~~
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
+
+app.get('/', function (req, res) {
+    res.render("index", { name: "Tam" });
 });
 ~~~
 
