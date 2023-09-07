@@ -108,8 +108,8 @@ Node.js で HTML を配信してみましょう。
 
 ~~~
 // e-とぴあ の PC はプロキシがあるので、以下が必要です。
-npm config set proxy http://proxy.e-topia-kagawa.local/
-npm config set https-proxy http://proxy.e-topia-kagawa.local/
+npm config set proxy http://proxy.e-topia-kagawa.local:8080/
+npm config set https-proxy http://proxy.e-topia-kagawa.local:8080/
 // 自宅や自分の PC を使用する際には、上記は必要ありません。
 npm install express
 ~~~
