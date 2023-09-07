@@ -14,6 +14,16 @@ template: invert
 <!-- footer: リスキリング Node.js -->
 
 ---
+## WiFi
+
+### SSID
+- 2.4GHz: etp-reskilling01a
+- 5GHz: etp-reskilling01b
+
+### Password
+- z6qsewi5
+
+---
 ## git
 
 - バージョン管理システム
