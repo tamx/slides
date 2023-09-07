@@ -97,8 +97,14 @@ Node.js で HTML を配信してみましょう。
 通常 express パッケージを用いるので、以下のコマンドを入力して、 express パッケージをインストールします。
 
 ~~~
+// e-とぴあ の PC はプロキシがあるので、以下が必要です。
+npm config set proxy http://proxy.e-topia-kagawa.local/
+npm config set https-proxy http://proxy.e-topia-kagawa.local/
+// 自宅や自分の PC を使用する際には、上記は必要ありません。
 npm install express
 ~~~
+
+---
 
 ~~~
 var express = require("express");
@@ -173,7 +179,7 @@ index.html
 
 ~~~
 app.get('/', function(req, res) {
-  res.render(__dirname + "/views/layouts/main.html", {name: "Tam"});
+  res.render(__dirname + "/index.html", {name: "Tam"});
 });
 ~~~
 
