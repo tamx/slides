@@ -23,7 +23,7 @@ template: invert
 |1|Tam|2006-01-01|雑務課|
 |2|馬場|2003-09-08|秘書課|
 |3|水尾|1980-08-29|総務課|
-|4|ほげほげ|1990-09-22|電算課|
+|4|多田|1990-09-12|電算課|
 
 - 上のようなデータ構造の単位を「テーブル」と呼びます。
 - テーブルを複数組み合わせた構造の単位を「データーベース」と呼びます。
@@ -202,5 +202,92 @@ DROP TABLE テーブル名;
 > 大いなる力には、大いなる責任が伴う。
 
 ---
+## 並び替え
 
-# JS から MySQL への I/O
+以下のようにすると、カラム名 id で降順に並び替えた結果が得られます。
+
+~~~
+SELECT id, name FROM student ORDER BY id DESC;
+~~~
+
+昇順にするためには、「DESC」の代わりに「ASC」が使えます。
+
+---
+## 検索
+
+以下のようにすると、条件に合致したレコードのみを取り出すことが出来ます。
+
+ここでは、学年（grade）が２年以下を取り出しています。
+
+~~~
+SELECT * FROM student WHERE grade <= 2;
+~~~
+
+---
+## 更新
+
+データの更新は以下のようにします。
+
+~~~
+UPDATE student SET name = 'Mizuo' WHERE id = 3001;
+~~~
+
+これにより、 id が 3001番の「水尾」が「Mizuo」に変更されます。
+
+---
+## トランザクション
+
+複数の人が異なるデータを書き込もうとすると困った自体になります。
+
+この問題を回避するためには、以下のようにします。
+
+~~~
+START TRANSACTION;
+UPDATE student SET name = 'MIZUO' WHERE id = 3001;
+COMMIT; ←ここまでエラーがなければ、書き込む
+ or
+ROLLBACK; ←エラーがあれば、変更をキャンセルして元に戻す。
+~~~
+
+---
+## Node.js から MySQL への接続
+
+~~~
+% npm install mysql
+~~~
+
+~~~
+const mysql = require('mysql');
+ 
+const connection = mysql.createConnection({
+  host: "localhost",
+  user: "【MySQLユーザー名】",
+  password: "【MySQLパスワード】",
+  database: "【データベース名】"
+});
+~~~
+
+---
+## MySQL の操作
+
+~~~
+connection.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected to MySQL DB!");
+  
+  /// 例 : テーブルの全レコード取得
+  const sql = `
+    SELECT * FROM student;
+  `
+  connection.query(sql, function (err, result) {
+    if (err) throw err;
+    /// 全レコード表示
+    console.log("Result: ", result);
+  });
+});
+~~~
+
+---
+## 演習
+
+なにかの CSV をテーブルに書き込む Node.js ？
