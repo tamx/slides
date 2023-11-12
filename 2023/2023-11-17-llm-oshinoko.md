@@ -18,7 +18,7 @@ template: invert
 
 ### Tam@GDG四国
 
-<img src="https://media.connpass.com/thumbs/c5/c0/c5c0661aefdad5046d18ff62c534f169.png" >
+!()[https://media.connpass.com/thumbs/c5/c0/c5c0661aefdad5046d18ff62c534f169.png]
 
 アルコールが飲めない未成年のおっさん
 
@@ -174,7 +174,7 @@ ELYZA 、おまえはただの日本人だ。
 - メモリ 256GB
 - ストレージは 63GB あれば余裕。
 
-<img src="Xeon.png" width="30%" >
+!()[Xeon.png]
 
 ---
 ## GPU欲しい！
