@@ -94,7 +94,7 @@ Google Drive 上の Google Document やら PDF から、機密情報を含んだ
 >> MEMちょの年齢は第3章の時点で登場している年齢よりも1つ下がる
 >> 第2章の時点で18歳です。
 >>
->> 第2章の時点で18歳であるMEMちょの年齢は <span style="color: red;">18歳</span> です。
+>> 第2章の時点で18歳であるMEMちょの年齢は ***18歳*** です。
 
 サバ読みすぎ！
 
@@ -121,7 +121,7 @@ Google Drive 上の Google Document やら PDF から、機密情報を含んだ
 ## これはどうだ？
 
 > Q:「SuICa で汽車に乗れますか？」
->> SuICaで汽車に乗ることはできません。 <span style="color: red;">SuICaは架空のアイドルグループ</span> で、汽車には乗れません。
+>> SuICaで汽車に乗ることはできません。 $$ \textcolor{red}{SuICaは架空のアイドルグループ} $$ で、汽車には乗れません。
 
 （四国では）大体あってる。
 
