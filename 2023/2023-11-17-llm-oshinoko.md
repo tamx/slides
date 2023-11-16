@@ -20,7 +20,7 @@ template: invert
 
 ![](https://media.connpass.com/thumbs/c5/c0/c5c0661aefdad5046d18ff62c534f169.png)
 
-現役オーガナイザーの中で最弱にして最古の老害
+オーガナイザー四天王の中で ***最弱*** にして ***最古*** の面汚し
 
 アルコールが飲めない未成年のおっさん
 
