@@ -11,6 +11,8 @@ $theme: gaia
 template: invert
 -->
 
+Gemini に人間様の言う事を聞かせ、世界の本当の主は誰であるかを分からせてみた。
+
 <!-- footer: Tam -->
 
 ---
