@@ -21,7 +21,7 @@ Gemini に人間様の言う事を聞かせ、世界の本当の主は誰であ�
 Tam @ 高松
 
 お仕事：緑の地球から青色の星を守っています。
-![](https://spice.eplus.jp/images/rkX3jRcQKLmpXxwrDLukMSf7YNDyUV1BtXjVTvjK3XzyIpmcaflf7GyEQT7RagfS)
+<img src="https://spice.eplus.jp/images/rkX3jRcQKLmpXxwrDLukMSf7YNDyUV1BtXjVTvjK3XzyIpmcaflf7GyEQT7RagfS" height="25%">
 
 ---
 ## 動機
