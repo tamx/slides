@@ -100,7 +100,8 @@ IbsDfObJibCL-TDQZ1FxO2xsU; expires=Mon, 30-Aug-2021 07:04:15 GMT; path=/; domain
 Accept-Ranges: none
 Vary: Accept-Encoding
 
-<!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="ja"><head><meta content="&#19990;&#30028;&#20013;&#12398;&#12354;
+<!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="ja">
+<head><meta content="&#19990;&#30028;&#20013;&#12398;&#12354;
 （以下 HTML が続きます。）
 ~~~
 
