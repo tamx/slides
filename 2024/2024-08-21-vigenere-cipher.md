@@ -4,7 +4,7 @@ paginate: true
 ---
 # Vigenere Cipher
 
-Vigenere Cipher
+Tam
 
 <!-- 
 $theme: gaia
