@@ -23,7 +23,7 @@ The most famous example: the Caesar cipher.
 Example: Shift one character.
 ~~~
 H A L
-↓ ↓
+↓ ↓ ↓
 I B M
 ~~~
 
