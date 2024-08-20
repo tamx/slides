@@ -47,15 +47,15 @@ cipher text: 'CFPE'
 
 We assume the below:
 
-$ P_i $ : The i-rd charactor of plain text
+$$ P_i $$ : The i-rd charactor of plain text
 
-$ K_i $ : The i-rd charactor of key
+$$ K_i $$ : The i-rd charactor of key
 
-$ C_i $ : The i-rd charactor of ciphered text
+$$ C_i $$ : The i-rd charactor of ciphered text
 
-$ C_i = (P_i + K_i) mod 26 $
+$$ C_i = (P_i + K_i) mod 26 $$
 
-$ P_i = (C_i - K_i) mod 26 $
+$$ P_i = (C_i - K_i) mod 26 $$
 
 ---
 ## Kasisky Test
