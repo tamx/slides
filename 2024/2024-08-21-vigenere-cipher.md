@@ -21,12 +21,15 @@ template: invert
 The most famous example: the Caesar cipher.
 
 Example: Shift one character.
+~~~
 H A L
-↓ ↓ ↓
+↓ ↓
 I B M
+~~~
 
 Simple substitution cipher is
-each 'd' of plain text become the same charactor.
+
+each 'H' of plain text become the same charactor.
 
 ---
 ## Vigenere Cipher
@@ -69,3 +72,28 @@ For example: we found the intervals number are 9, 63, 180, we can calculate the 
 Finally, this is the same as the Caesar cipher with intervals of 3 or 9.
 
 ---
+## Charles Babbage
+
+- The father of computer.
+- discover the steam calculator "Babbage machine".
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/BabbageDifferenceEngine.jpg/220px-BabbageDifferenceEngine.jpg)
+
+---
+## autokey cipher
+
+### Basic Idea
+
+~~~
+Plaintext:  attackatdawn
+OrigKey:    QUEENLY
+Key:        QUEENLYATTACKATDAWN
+Ciphertext: QNXEPVYTWTWP
+~~~
+
+~~~
+Ciphertext: QNXEPVYTWTWP
+OrigKey:    QUEENLY
+Plaintext:  a
+Key:        QUEENLYA
+~~~
