@@ -54,8 +54,10 @@ $ K_i $ : The i-th charactor of key
 
 $ C_i $ : The i-th charactor of ciphered text
 
+Encrypt:
 $$ C_i = (P_i + K_i) mod 26 $$
 
+Decrypt:
 $$ P_i = (C_i - K_i) mod 26 $$
 
 ---
@@ -98,3 +100,6 @@ OrigKey:    QUEENLY
 Plaintext:  a
 Key:        QUEENLYA
 ~~~
+
+---
+## Continue to Enigma...
