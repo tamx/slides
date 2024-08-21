@@ -113,7 +113,7 @@ element.setAttribute('src', 'https://x.gd/LLx5A');
         &lt;div id=&quot;myid&quot;&gt;Hello!&lt;/div&gt;
     &lt;/body&gt;
     &lt;script type=&quot;text/javascript&quot;&gt;
-        var element = document.getElementById(&quot;myid&quot;);
+        const element = document.getElementById(&quot;myid&quot;);
         console.log(element.innerText);
         element.innerHTML = '&lt;span style=&quot;color:#ff0000;&quot;&gt;Good Evening!&lt;/span&gt;';
     &lt;/script&gt;
@@ -178,7 +178,7 @@ element.setAttribute('src', 'https://x.gd/LLx5A');
     alert('Click');
 }
 
-let button = document.getElementById('myid2');
+const button = document.getElementById('myid2');
 button.addEventListener('click', buttonClick);
 </span></span></foreignObject></svg></code></pre>
 <footer>JavaScript 入門講座 第４回</footer>
@@ -259,10 +259,10 @@ f.addEventListener('change', function(evt) {
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-footer="JavaScript 入門講座 第４回" data-marpit-pagination="18" data-marpit-pagination-total="18" style="--paginate:true;--footer:JavaScript 入門講座 第４回;">
 <h2>CSV ファイルの読み込み</h2>
 <pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>// 配列を定義
-let csvArray = [];
+const csvArray = [];
  
 // 改行ごとに配列化
-let lines = body.split(/\r\n|\n/);
+const lines = body.split(/\r\n|\n/);
  
 // 1行ごとに処理
 for (let i = 0; i &lt; lines.length; ++i) {
