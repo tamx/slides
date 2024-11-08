@@ -38,6 +38,17 @@ WiFi でも有線LAN でも、
 
 ![](https://www.planex.co.jp/articles/lan/25gbe_no1/images/009.jpg)
 
+
+---
+## スイッチングHUB とバカHUB
+
+![](http://buffalo.jp/qa/lan/make/b2b00040/image/002.gif)
+
+![](http://buffalo.jp/qa/lan/make/b2b00040/image/001.gif)
+
+※Buffalo の HP より抜粋
+
+
 ---
 ## 無線LAN の場合
 
@@ -47,7 +58,7 @@ WiFi でも有線LAN でも、
 ⇨同じ WiFi を使ってる人は、全員データが見えます。
 
 ---
-## WireShark
+## WireShark や TCPDump
 
 - データを覗き見るための専用のソフトがあります。
 - 違法性はありません！（よく誤解する人が居ます。）
