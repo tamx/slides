@@ -40,9 +40,15 @@ WiFi でも有線LAN でも、
 
 
 ---
-## スイッチングHUB とバカHUB
+## バカHUB
 
 ![](http://buffalo.jp/qa/lan/make/b2b00040/image/002.gif)
+
+※Buffalo の HP より抜粋
+
+
+---
+## スイッチングHUB
 
 ![](http://buffalo.jp/qa/lan/make/b2b00040/image/001.gif)
 
