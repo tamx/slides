@@ -42,17 +42,17 @@ WiFi でも有線LAN でも、
 ---
 ## バカHUB
 
-![](http://buffalo.jp/qa/lan/make/b2b00040/image/002.gif)
+![](https://www.nojima.co.jp/support/wp-content/uploads/2022/12/repeaterHub.jpg)
 
-※Buffalo の HP より抜粋
+※ノジマ の HP より抜粋
 
 
 ---
 ## スイッチングHUB
 
-![](http://buffalo.jp/qa/lan/make/b2b00040/image/001.gif)
+![](https://www.nojima.co.jp/support/wp-content/uploads/2022/12/switchingHub.jpg)
 
-※Buffalo の HP より抜粋
+※ノジマ の HP より抜粋
 
 
 ---
