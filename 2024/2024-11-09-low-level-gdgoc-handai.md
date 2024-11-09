@@ -10,7 +10,7 @@ GDGoC 大阪大学
 
 低レイヤー講演会 in Osaka
 
-Tam
+Tam@GDG四国
 
 <!-- 
 $theme: gaia
@@ -18,6 +18,13 @@ template: invert
 -->
 
 <!-- footer: パケット解析(Tam) -->
+
+---
+## 自己紹介
+
+Tam@GDG四国
+
+うどんの国からやってきました。
 
 ---
 ## アンケート
