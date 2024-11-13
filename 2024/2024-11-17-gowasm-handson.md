@@ -71,6 +71,56 @@ cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" .
         });
     </script>
 </head>
-<body><h1>Go WebAssembly</h1></body>
+<body><h1 id="tag">Go WebAssembly</h1></body>
 </html>
 ~~~
+
+---
+## WASM が終了してしまわないようにしよう！
+
+~~~
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!")
+	println("Go!")
+	c := make(chan struct{})
+	<-c
+}
+~~~
+
+---
+## WASM から JS を操作してみよう！
+
+~~~
+func hello() {
+    // document.body.innerHTML = "<h2>Hello!</h2>";
+	js.Global().Get("document").Get("body").
+		Set("innerHTML", "<h2>Hello!</h2>")
+}
+~~~
+
+---
+## JS から WASM を呼び出してみよう！
+
+~~~
+func start() {
+    // document.getElementById('tag').addEventListener("click", hello);
+    js.Global().Get("document").
+    Call("getElementById", "tag").
+    Call("addEventListener", "click",
+        js.FuncOf(func(this js.Value, args []js.Value) any {
+            hello()
+            return nil
+        }))
+}
+~~~
+
+---
+## 以上です。
+
+基本はこれだけ。
+
+あとはお好みで組み合わせていきましょう！
