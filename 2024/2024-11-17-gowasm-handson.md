@@ -64,7 +64,7 @@ cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" .
     <script src="./wasm_exec.js"></script>
     <script>
         const go = new Go();
-        WebAssembly.instantiateStreaming(fetch("markdown-to-html.wasm"), go.importObject).then((result) => {
+        WebAssembly.instantiateStreaming(fetch("main.wasm"), go.importObject).then((result) => {
             const module = result.module;
             const instance = result.instance;
             go.run(instance);

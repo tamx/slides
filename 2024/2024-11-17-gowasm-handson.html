@@ -55,7 +55,7 @@ func main() {
     &lt;script src=&quot;./wasm_exec.js&quot;&gt;&lt;/script&gt;
     &lt;script&gt;
         const go = new Go();
-        WebAssembly.instantiateStreaming(fetch(&quot;markdown-to-html.wasm&quot;), go.importObject).then((result) =&gt; {
+        WebAssembly.instantiateStreaming(fetch(&quot;main.wasm&quot;), go.importObject).then((result) =&gt; {
             const module = result.module;
             const instance = result.instance;
             go.run(instance);
