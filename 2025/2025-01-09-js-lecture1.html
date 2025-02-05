@@ -226,26 +226,22 @@ document.writeln(h + &quot;時&quot; + m + &quot;分&quot; + s + &quot;秒&quot;
 <footer>JavaScript 入門講座 第１回</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-footer="JavaScript 入門講座 第１回" data-marpit-pagination="17" data-marpit-pagination-total="19" style="--paginate:true;--footer:JavaScript 入門講座 第１回;">
-<h2>繰り返し文</h2>
-<p>1 から 10 までの数の和を求めましょう。</p>
-<pre><code class="language-sample0050.js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>let result = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10;
-document.writeln(result);
-</span></span></foreignObject></svg></code></pre>
-<pre><code class="language-sample0051.js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>let result = 0;
-for (let i = 1; i &lt;= 10; i++) {
-    result = result + i;
-}
+<h2>計算してみましょう</h2>
+<p>100円の商品の消費税（10%）込の金額を計算してみましょう。</p>
+<p>JavaScript では、掛け算の記号として「*（アスタリスク）」を使います。</p>
+<pre><code class="language-sample0050.js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>let result = 100 * 1.10;
 document.writeln(result);
 </span></span></foreignObject></svg></code></pre>
 <footer>JavaScript 入門講座 第１回</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-footer="JavaScript 入門講座 第１回" data-marpit-pagination="18" data-marpit-pagination-total="19" style="--paginate:true;--footer:JavaScript 入門講座 第１回;">
-<h2>公式を使う</h2>
-<pre><code class="language-sample0060.js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>let reuslt = 10 * 11 / 2;
+<h2>計算をしてみましょう２</h2>
+<p>200円の商品の消費税（10%）込の金額を計算してみましょう。</p>
+<pre><code class="language-sample0060.js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>let result = 200 * 1.10;
 document.writeln(result);
 </span></span></foreignObject></svg></code></pre>
-<p>次に、 1 から 20 までの数の和を求めてください。</p>
-<pre><code class="language-sample0061.js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>let reuslt = 20 * 21 / 2;
+<p>次に、 300円の商品の消費税（10%）込の金額を計算してみましょう。</p>
+<pre><code class="language-sample0061.js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>let result = 300 * 1.10;
 document.writeln(result);
 </span></span></foreignObject></svg></code></pre>
 <footer>JavaScript 入門講座 第１回</footer>
@@ -254,18 +250,18 @@ document.writeln(result);
 <h2>関数</h2>
 <p>同じことをする部分をまとめます。</p>
 <pre><code class="language-sample0070.js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>// ここでは関数を定義するだけ。
-function sum(num) {
-    let result = num * (num + 1) / 2;
+function price(value) {
+    let result = value * 1.10;
     return result;
 }
 
 // 以下で初めて関数が実行される。
-let result = sum(10);
-document.writeln(result);
+let result1 = price(100);
+document.writeln(result1);
 
 // 以下で再び関数が実行される。
-result = sum(20);
-document.writeln(result);
+let result2 = price(200);
+document.writeln(result2);
 </span></span></foreignObject></svg></code></pre>
 <footer>JavaScript 入門講座 第１回</footer>
 </section>
