@@ -27,7 +27,7 @@ function btn1DelClick() {
 let item2 = 0;
 
 function btn2Click() {
-    price += 1500 * 108 / 100;
+    price += 1500 * 110 / 100;
     console.log(price);
     item2++;
     display();
@@ -38,7 +38,7 @@ function btn2DelClick() {
         return;
     }
     item2--;
-    price -= 1500 * 108 / 100;
+    price -= 1500 * 110 / 100;
     console.log(price);
     display();
 }
@@ -65,7 +65,7 @@ function btn3DelClick() {
 let item4 = 0;
 
 function btn4Click() {
-    price += 6000 * 108 / 100;
+    price += 6000 * 110 / 100;
     console.log(price);
     item4++;
     display();
@@ -76,7 +76,7 @@ function btn4DelClick() {
         return;
     }
     item4--;
-    price -= 6000 * 108 / 100;
+    price -= 6000 * 110 / 100;
     console.log(price);
     display();
 }
