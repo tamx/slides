@@ -15,7 +15,7 @@ $theme: gaia
 template: invert
 -->
 
-<!-- footer: パケット解析(Tam) -->
+<!-- footer: 春の文化祭2025 GoWASM ハンズオン(Tam) -->
 
 ---
 ## 自己紹介
