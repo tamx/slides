@@ -44,6 +44,9 @@ func main() {
 GOOS=js GOARCH=wasm go build -o main.wasm main.go
 ~~~
 
+---
+## ローダーの準備
+
 Go でコンパイルされた WASM コードを実行するための JS ローダーをコピーします。
 ~~~
 cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" .
