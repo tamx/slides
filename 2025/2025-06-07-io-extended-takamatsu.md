@@ -1,2 +1,87 @@
+---
+marp: true
+paginate: true
+---
+# Android XR による生活の変化
 
-https://www.youtube.com/watch?v=o8NiE3XMPrM
+2025/06/07
+
+I/O Extended 高松
+
+Tam@GDG四国
+
+<!-- 
+$theme: gaia
+template: invert
+-->
+
+<!-- footer: Android XR による生活の変化(Tam) -->
+
+---
+## 自己紹介
+
+Tam
+
+---
+## Android XR
+
+- 今年の I/O で発表されたメガネ型デバイス
+- メガネのレンズに本人にしか見えない情報を投影できる
+- 音声による指示でメールを読み書きしたり、
+- Gemini によるアシストもしてくれる
+- 音楽を聞いたり、カメラで写真を撮ったり出来る
+
+---
+## デモ
+
+[](https://www.youtube.com/watch?v=o8NiE3XMPrM)
+
+Android XR のパフォーマンスは 01:43 頃から
+
+---
+## 進化
+
+- 生活は劇的に変わりそう
+
+---
+## 進化
+
+- 生活は劇的に変わりそう
+- Google は **進化してない** な...
+
+---
+## Google Glass のパフォーマンス
+
+- Google I/O 2013
+
+[](https://www.youtube.com/watch?v=lz0o-y-2wT0&list=PL56D792A831D0C362)
+
+---
+## Google の進化
+
+- I/O でメガネのライブデモを突如として開始する
+- そのまま I/O 会場へと突入する
+
+１２年前とほぼ同じシナリオを **また** 展開した。
+
+---
+## 12年前の失態
+
+このパフォーマンスは 12年前当時はとても衝撃的で、
+観客は拍手喝采のあらしだった。
+
+---
+## 12年前の失態
+
+このパフォーマンスは 12年前当時はとても衝撃的で、
+観客は拍手喝采のあらしだった。
+
+ので、 **２日目にも同じパフォーマンスを行った！**
+
+---
+## とは言っても楽しみでしかない
+
+Google Glass 発表当時のイメージデモ
+
+[One Day](https://www.youtube.com/watch?v=5R1snVxGNVs)
+
