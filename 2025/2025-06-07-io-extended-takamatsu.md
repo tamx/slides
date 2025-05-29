@@ -34,7 +34,7 @@ Tam
 ---
 ## デモ
 
-[](https://www.youtube.com/watch?v=o8NiE3XMPrM)
+[Google I/O 2025](https://www.youtube.com/watch?v=o8NiE3XMPrM)
 
 Android XR のパフォーマンスは 01:43 頃から
 
@@ -54,7 +54,7 @@ Android XR のパフォーマンスは 01:43 頃から
 
 - Google I/O 2013
 
-[](https://www.youtube.com/watch?v=lz0o-y-2wT0&list=PL56D792A831D0C362)
+[Google I/O 2013](https://www.youtube.com/watch?v=lz0o-y-2wT0&list=PL56D792A831D0C362)
 
 ---
 ## Google の進化
