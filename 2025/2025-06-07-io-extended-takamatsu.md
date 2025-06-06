@@ -24,7 +24,7 @@ Tam
 
 XM研究員
 
-![](https://drive.google.com/file/d/131yjHkqJ1SFxdWt1s0UZYOYS7zeF7PMJ/view)
+![](https://k.cane.jp/tam/tam.png)
 
 ---
 ## Android XR
