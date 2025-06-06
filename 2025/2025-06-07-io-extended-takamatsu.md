@@ -36,7 +36,7 @@ Tam
 
 [Google I/O 2025](https://www.youtube.com/watch?v=o8NiE3XMPrM)
 
-Android XR のパフォーマンスは 01:43 頃から
+Android XR のパフォーマンスは 01:43:00 頃から
 
 ※英語ですが、日本語字幕があるので安心して下さい。
 
