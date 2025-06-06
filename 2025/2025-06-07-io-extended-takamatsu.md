@@ -56,7 +56,7 @@ Android XR のパフォーマンスは 01:43:00 頃から
 
 - Google I/O 2012
 
-[Google I/O 2013](https://www.youtube.com/watch?v=D7TB8b2t3QE)
+[Google I/O 2012](https://www.youtube.com/watch?v=D7TB8b2t3QE)
 
 Glass のパフォーマンスは 00:05:00 頃から
 
