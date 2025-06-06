@@ -22,6 +22,10 @@ template: invert
 
 Tam
 
+XM研究員
+
+![](https://drive.google.com/file/d/131yjHkqJ1SFxdWt1s0UZYOYS7zeF7PMJ/view)
+
 ---
 ## Android XR
 
