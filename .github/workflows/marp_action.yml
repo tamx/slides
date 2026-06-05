@@ -26,7 +26,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Convert Markdown into HTML and PDF
-        uses: KoharaKazuya/marp-cli-action@v2
+        uses: tamx/marp-cli-action@v2
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
